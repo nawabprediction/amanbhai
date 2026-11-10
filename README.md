@@ -7,7 +7,7 @@ A responsive landing page inspired by the design you uploaded, with a dynamic Te
 1. Install Node.js 20 or later.
 2. Run `npm install`.
 3. Copy `.env.example` to `.env.local`.
-4. Edit `TELEGRAM_INVITE_URL` to `https://t.me/+HbZleucyQvQ2OWY1`.
+4. Edit `TELEGRAM_INVITE_URL` to `https://telegram.me/+HbZleucyQvQ2OWY1`.
 5. Optionally set `META_PIXEL_ID`. Only enable tracking where you have the required notice/consent.
 6. Run `npm run dev` and open `http://localhost:3000`.
 

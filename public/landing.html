@@ -115,7 +115,7 @@ h1 span{background:linear-gradient(90deg,var(--text),var(--a) 45%,var(--b));back
   <div class="icon"><img src="/logo.jpg" alt="Aman Bhai"></div>
   <h1><span>AMAN BHAI COMMUNITY</span></h1>
   <span class="members" id="members">Telegram Community</span>
-  <a id="jbtn" href="https://t.me/+HbZleucyQvQ2OWY1" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-2 1.93c-.23.23-.42.42-.82.42z"/></svg><span>JOIN NOW</span></a>
+  <a id="jbtn" href="https://telegram.me/+HbZleucyQvQ2OWY1" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-2 1.93c-.23.23-.42.42-.82.42z"/></svg><span>JOIN NOW</span></a>
   <div class="features"><div class="feature"><b>TRACKED</b><span>CLICKS</span></div><div class="feature"><b>INSTANT</b><span>ACCESS</span></div><div class="feature"><b>DIRECT</b><span>ACCESS</span></div></div>
   <div class="footer">Opens Telegram &bull; Join our community</div>
 </main>
@@ -127,7 +127,7 @@ for(var i=0;i<14;i++)setTimeout(mk,i*300);var t=setInterval(mk,620);document.add
 <script>
 (function(){
   const btn = document.getElementById('jbtn');
-  const fallback = 'https://t.me/+HbZleucyQvQ2OWY1';
+  const fallback = 'https://telegram.me/+HbZleucyQvQ2OWY1';
   let destination = fallback;
   let pixelReady = false;
   const visitorKey = 'amanbhai_visitor_id';
@@ -150,7 +150,7 @@ for(var i=0;i<14;i++)setTimeout(mk,i*300);var t=setInterval(mk,620);document.add
     catch(e){ console.warn('Using fallback destination; configure TELEGRAM_INVITE_URL on your server.'); }
   }
   btn.addEventListener('click', function(e){
-    if(!isTelegram(destination) || destination===fallback){e.preventDefault();alert('Telegram link has not been configured yet.');return;}
+    if(!isTelegram(destination)){e.preventDefault();alert('Telegram link has not been configured yet.');return;}
     record('JoinClick'); if(pixelReady && window.fbq) fbq('track','ViewContent');
   });
   record('PageView');load();
