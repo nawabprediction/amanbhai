@@ -55,7 +55,7 @@ body:after{background:var(--b);right:-120px;bottom:5%;animation-delay:-4s}
   outline:4px solid rgba(var(--a-rgb),.6);box-shadow:0 0 0 10px rgba(var(--a-rgb),.08),0 0 38px rgba(var(--a-rgb),.5);
   animation:logoFloat 3s ease-in-out infinite}
 .icon:before{content:"";position:absolute;inset:-12px;border-radius:50%;border:1px solid rgba(var(--a-rgb),.25);animation:ring 2.5s linear infinite}
-.icon img{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;object-fit:cover}
+.icon img{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:76% 28%}
 img[src=""]{display:none}
 @keyframes logoFloat{50%{transform:translateY(-7px) rotate(1deg)}}
 @keyframes ring{from{transform:scale(.94);opacity:.8}to{transform:scale(1.08);opacity:0}}
@@ -102,23 +102,24 @@ h1 span{background:linear-gradient(90deg,var(--text),var(--a) 45%,var(--b));back
 @media(max-width:390px){body{padding:10px}.container{padding:25px 17px 22px;border-radius:25px}.icon{width:105px;height:105px;font-size:44px}#jbtn{font-size:16px;min-height:60px}}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.petal-field{display:none}}
 #aman-credit{position:fixed;right:max(10px,env(safe-area-inset-right));bottom:max(10px,env(safe-area-inset-bottom));z-index:50;display:flex;align-items:center;gap:7px;padding:5px 11px 5px 5px;border-radius:999px;font:600 11px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.02em;color:rgba(255,255,255,.92);background:rgba(12,14,24,.75);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(8px);box-shadow:0 4px 14px -6px rgba(0,0,0,.6)}
-#aman-credit .credit-icon{display:grid;place-items:center;width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,#22c55e,#16833f);color:#fff;font-size:13px;font-weight:900}
+#aman-credit .credit-icon{display:grid;place-items:center;width:22px;height:22px;border-radius:6px;overflow:hidden;background:#0c2b30}
+#aman-credit .credit-icon img{width:100%;height:100%;object-fit:cover;object-position:76% 28%}
 #aman-credit strong{color:#fff}
 </style>
-<style>:root{--lp1:#22c55e;--lp2:#16833f;--lp-on:#ffffff;--lp1-rgb:34,197,94;--lp2-rgb:22,131,63;--lp1-soft:#9ce5b7;--lp2-soft:#96c7a9;--lp1-deep:#16803d;--lp2-deep:#0e5529;--lp-bg:#020e07;--lp-bg2:#051c0d;--lp-bg3:#051d0e;--lp-bg-rgb:2,13,6;--lp-bg2-rgb:4,27,13;--lp-bg3-rgb:4,28,13;--lp-pale:#e9f9ef;--lp-pale2:#d5e9dc}</style><link rel="preconnect" href="https://connect.facebook.net" crossorigin><meta name="description" content="Join our Telegram community"><meta property="og:type" content="website"><meta property="og:site_name" content="AMAN BHAI COMMUNITY"><meta property="og:title" content="AMAN BHAI COMMUNITY"><meta property="og:description" content="AMAN BHAI COMMUNITY"><meta property="og:url" content=""><meta property="og:image" content=""><meta name="twitter:card" content="summary"><meta name="twitter:title" content="AMAN BHAI COMMUNITY"><meta name="twitter:description" content="AMAN BHAI COMMUNITY"><meta name="twitter:image" content="">
+<style>:root{--lp1:#22c55e;--lp2:#16833f;--lp-on:#ffffff;--lp1-rgb:34,197,94;--lp2-rgb:22,131,63;--lp1-soft:#9ce5b7;--lp2-soft:#96c7a9;--lp1-deep:#16803d;--lp2-deep:#0e5529;--lp-bg:#020e07;--lp-bg2:#051c0d;--lp-bg3:#051d0e;--lp-bg-rgb:2,13,6;--lp-bg2-rgb:4,27,13;--lp-bg3-rgb:4,28,13;--lp-pale:#e9f9ef;--lp-pale2:#d5e9dc}</style><link rel="preconnect" href="https://connect.facebook.net" crossorigin><meta name="description" content="Join our Telegram community"><meta property="og:type" content="website"><meta property="og:site_name" content="AMAN BHAI COMMUNITY"><meta property="og:title" content="AMAN BHAI COMMUNITY"><meta property="og:description" content="AMAN BHAI COMMUNITY"><meta property="og:url" content=""><meta property="og:image" content="/logo.jpg"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="AMAN BHAI COMMUNITY"><meta name="twitter:description" content="AMAN BHAI COMMUNITY"><meta name="twitter:image" content="/logo.jpg"><link rel="icon" href="/logo.jpg">
 </head>
 <body>
 <div class="petal-field" aria-hidden="true"></div>
 <main class="container">
   <div class="badge">AMAN BHAI COMMUNITY</div>
-  <div class="icon"><span>A</span></div>
+  <div class="icon"><img src="/logo.jpg" alt="Aman Bhai"></div>
   <h1><span>AMAN BHAI COMMUNITY</span></h1>
   <span class="members" id="members">Telegram Community</span>
   <a id="jbtn" href="https://t.me/+HbZleucyQvQ2OWY1" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-2 1.93c-.23.23-.42.42-.82.42z"/></svg><span>JOIN NOW</span></a>
   <div class="features"><div class="feature"><b>TRACKED</b><span>CLICKS</span></div><div class="feature"><b>INSTANT</b><span>ACCESS</span></div><div class="feature"><b>DIRECT</b><span>ACCESS</span></div></div>
   <div class="footer">Opens Telegram &bull; Join our community</div>
 </main>
-<div id="aman-credit" role="note"><span class="credit-icon">A</span><span>Made By <strong>AmanBhai</strong></span></div>
+<div id="aman-credit" role="note"><span class="credit-icon"><img src="/logo.jpg" alt=""></span><span>Made By <strong>AmanBhai</strong></span></div>
 
 <script>(function(){var f=document.querySelector('.petal-field');if(!f||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))return;
 function mk(){var p=document.createElement('span');p.className='petal';p.style.left=(Math.random()*105-2)+'vw';p.style.animationDuration=(6+Math.random()*7)+'s';p.style.animationDelay=(Math.random()*1.2)+'s';p.style.opacity=(0.4+Math.random()*0.45).toFixed(2);f.appendChild(p);setTimeout(function(){p.remove()},15000)}
