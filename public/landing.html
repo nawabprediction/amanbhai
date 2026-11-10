@@ -106,7 +106,20 @@ h1 span{background:linear-gradient(90deg,var(--text),var(--a) 45%,var(--b));back
 #aman-credit .credit-icon img{width:100%;height:100%;object-fit:cover;object-position:76% 28%}
 #aman-credit strong{color:#fff}
 </style>
-<style>:root{--lp1:#22c55e;--lp2:#16833f;--lp-on:#ffffff;--lp1-rgb:34,197,94;--lp2-rgb:22,131,63;--lp1-soft:#9ce5b7;--lp2-soft:#96c7a9;--lp1-deep:#16803d;--lp2-deep:#0e5529;--lp-bg:#020e07;--lp-bg2:#051c0d;--lp-bg3:#051d0e;--lp-bg-rgb:2,13,6;--lp-bg2-rgb:4,27,13;--lp-bg3-rgb:4,28,13;--lp-pale:#e9f9ef;--lp-pale2:#d5e9dc}</style><link rel="preconnect" href="https://connect.facebook.net" crossorigin><meta name="description" content="Join our Telegram community"><meta property="og:type" content="website"><meta property="og:site_name" content="AMAN BHAI COMMUNITY"><meta property="og:title" content="AMAN BHAI COMMUNITY"><meta property="og:description" content="AMAN BHAI COMMUNITY"><meta property="og:url" content=""><meta property="og:image" content="/logo.jpg"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="AMAN BHAI COMMUNITY"><meta name="twitter:description" content="AMAN BHAI COMMUNITY"><meta name="twitter:image" content="/logo.jpg"><link rel="icon" href="/logo.jpg">
+<style>:root{--lp1:#22c55e;--lp2:#16833f;--lp-on:#ffffff;--lp1-rgb:34,197,94;--lp2-rgb:22,131,63;--lp1-soft:#9ce5b7;--lp2-soft:#96c7a9;--lp1-deep:#16803d;--lp2-deep:#0e5529;--lp-bg:#020e07;--lp-bg2:#051c0d;--lp-bg3:#051d0e;--lp-bg-rgb:2,13,6;--lp-bg2-rgb:4,27,13;--lp-bg3-rgb:4,28,13;--lp-pale:#e9f9ef;--lp-pale2:#d5e9dc}</style><link rel="preconnect" href="https://connect.facebook.net" crossorigin><meta name="description" content="Join our Telegram community"><meta property="og:type" content="website"><meta property="og:site_name" content="AMAN BHAI COMMUNITY"><meta property="og:title" content="AMAN BHAI COMMUNITY"><meta property="og:description" content="AMAN BHAI COMMUNITY"><link rel="canonical" href="https://amanbhaistore.online/"><meta property="og:url" content="https://amanbhaistore.online/"><meta property="og:image" content="https://amanbhaistore.online/logo.jpg"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="AMAN BHAI COMMUNITY"><meta name="twitter:description" content="AMAN BHAI COMMUNITY"><meta name="twitter:image" content="https://amanbhaistore.online/logo.jpg"><link rel="icon" href="/logo.jpg">
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3638766372965737');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3638766372965737&ev=PageView&noscript=1" alt=""></noscript>
 </head>
 <body>
 <div class="petal-field" aria-hidden="true"></div>
@@ -129,7 +142,7 @@ for(var i=0;i<14;i++)setTimeout(mk,i*300);var t=setInterval(mk,620);document.add
   const btn = document.getElementById('jbtn');
   const fallback = 'https://telegram.me/+HbZleucyQvQ2OWY1';
   let destination = fallback;
-  let pixelReady = false;
+  let pixelReady = typeof fbq === 'function';
   const visitorKey = 'amanbhai_visitor_id';
   let vid = sessionStorage.getItem(visitorKey);
   if (!vid) { vid = (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random()); sessionStorage.setItem(visitorKey, vid); }
